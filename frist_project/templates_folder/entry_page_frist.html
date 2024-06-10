@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Employee Details</title>
+<style>
+    fieldset {
+        background-color: #eeeeee;
+        width:30%;
+      }
+    
+    
+    html {
+        display: table;
+        margin: auto;
+    }
+    
+    
+</style>
+</head>
+<body >
+    <br>
+    <br>
+      <!-- https://github.com/Vishnu161515101/vishnu_login_page.git -->
+   
+        <form method="POST" action="{% url 'vishnu12a' %}">
+            {% csrf_token %}
+    <fieldset>
+    <legend>login Details</legend>
+    <div style="text-align: right">
+      <a href="contact">Login</a>
+  </div>
+     <p> First name: <input type = "text" name = "fname" value="{{ fname }}"/>   {{ mymembers1 }}</p>
+     
+  
+   <p  > Password: <input type = "text" name = "Password" value="{{ Password }}"/> {{ mymembers2 }}</p>
+
+    <p>Email Id: <input type = "text" name = "Email" value="{{ Email }}"/> {{ mymembers3 }}</p>
+ 
+
+ 
+ <p>
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type = "submit" name = "submit" value = "Submit" />
+    </p>
+    {{ mymembers4 }}
+</fieldset>
+</form>
+</body>
+
+</html>
